@@ -9,7 +9,7 @@ Before reusing this configuration please change:
 
 ## Usage
 
-    bash <(curl -fsS https://raw.githubusercontent.com/colmarius/dot-files/master/clone_and_link.sh)
+    bash <(curl -fsS https://raw.githubusercontent.com/AniaCodequest/dot-files/master/clone_and_link.sh)
 
 ## Credits
 

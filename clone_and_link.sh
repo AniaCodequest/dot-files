@@ -1,13 +1,13 @@
 #!/bin/bash
 
-pushd "$HOME"
+pushd "$HOME/Projects"
 
-  if [ -d "~/Projects/dot-files" ]; then
-    pushd "~/Projects/dot-files"
+  if [ -d "dot-files" ]; then
+    pushd "dot-files"
       git smart-pull
     popd
   else
-    git clone "git://github.com/AniaCodequest/dot-files.git" "~/Projects/dot-files"
+    git clone "git://github.com/AniaCodequest/dot-files.git" "dot-files"
   fi
 
   ls -1d ~/Projects/dot-files/files/* ~/Projects/dot-files/files/.* | while read f; do

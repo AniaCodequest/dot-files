@@ -7,3 +7,4 @@ files/.ssh/known_hosts
 files/.tmuxinator/*
 files/.zsh/private-aliases
 files/.zsh/private-exports
+.idea*

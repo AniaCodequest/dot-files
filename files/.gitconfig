@@ -1,17 +1,23 @@
 [push]
 	default = upstream
 [user]
-	name = Marius Colacioiu
-	email = marius.colacioiu@gmail.com
+	name = Ania
+	email = ania@codequest.com
 [color]
 	ui = auto
-[core]
-	excludesfile = /Users/marius/.gitignore
 [credential]
 	helper = osxkeychain
 [github]
-	user = colmarius
+	user = AniaCodequest
 [diff]
 	submodule = log
 [column]
 	ui = auto,dense
+[core]
+        excludesfile = /Users/ania-codequest/.gitignore_global
+[difftool "sourcetree"]
+        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+        path =
+[mergetool "sourcetree"]
+        cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+        trustExitCode = true

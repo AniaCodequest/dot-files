@@ -14,7 +14,7 @@ pushd "$HOME/Projects"
     [ "$f" == '~/Projects/dot-files/files/.' ] ||
     [ "$f" == '~/Projects/dot-files/files/..' ] ||
     [ "$f" == '~/Projects/dot-files/files/.git' ] ||
-    ln -vsf "$f" .
+    ln -vsf "$f" /~
   done
 
 popd

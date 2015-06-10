@@ -2,18 +2,18 @@
 
 pushd "$HOME"
 
-  if [ -d ".dot-files" ]; then
-    pushd ".dot-files"
+  if [ -d "~/Projects/dot-files" ]; then
+    pushd "~/Projects/dot-files"
       git smart-pull
     popd
   else
-    git clone "git://github.com/AniaCodequest/dot-files.git" "Projects/dot-files"
+    git clone "git://github.com/AniaCodequest/dot-files.git" "~/Projects/dot-files"
   fi
 
-  ls -1d .dot-files/files/* .dot-files/files/.* | while read f; do
-    [ "$f" == '.dot-files/files/.' ] ||
-    [ "$f" == '.dot-files/files/..' ] ||
-    [ "$f" == '.dot-files/files/.git' ] ||
+  ls -1d ~/Projects/dot-files/files/* ~/Projects/dot-files/files/.* | while read f; do
+    [ "$f" == '~/Projects/dot-files/files/.' ] ||
+    [ "$f" == '~/Projects/dot-files/files/..' ] ||
+    [ "$f" == '~/Projects/dot-files/files/.git' ] ||
     ln -vsf "$f" .
   done
 
